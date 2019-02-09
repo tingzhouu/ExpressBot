@@ -1,0 +1,13 @@
+{
+  "name": "express-bot",
+  "alias": "express-bot",
+  "version": 2.0,
+  "builds": [{"src": "index.js", "use": "@now/node-server"}],
+  "routes": [
+    { "src": "/.*", "dest": "index.js" }
+  ],
+  "env": {
+    "BOT_TOKEN": "@telegram-bot-api"
+  }
+
+}
